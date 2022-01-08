@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>KOSTKU.</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <p>Kostan murah bersih nyaman dekat dengan kampus fasilitas lengkap dengan wifi adapun dengan AC </p>
+            <button type="button" class="head-btn"><a href="#rooms">GET STARTED !</a></button>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-wifi"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>KOSTAN memiliki jaringan wifi</h2>
+                    <p>Kostan memiliki jaringan wifi yang membuat mempermudah kita dalam hal mengerjakan tugas ataupun
+                        mengerjakan pr, sehingga tak perlu khawatir lagi dengan signal yang kadang menjadi permasalahan
+                        kita karna tanpa signal wifi atau kuota kita tidak dapat mengerjakan tugas kampus. dengan adanya
+                        fasilitas ini membuat Kostan lebih nyamann.
+                    </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-fan"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Ruangan BER AC</h2>
+                    <p>Ruangan BER AC sehingga Kostan terasa dingin saat siang hari yang terik atau panas,
+                        ruangan akan terasa nyaman karena dingin dan membuat semangat belajar akan meningkat
+                        nyaman digunakan pada saat belajar ataupun sedang mengerjakan tugas di kostan, serta
+                        nyaman apabila mengerjakan tugas kelompok bersama teman-teman.
+                    </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>KOSTAN bersih</h2>
+                    <p>kostan yang bersih </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-map-signs"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
+                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
+                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
+                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+        </div>
+    </section>
+
+    <div class="book" id="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/annas.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>KOSTAN ANNAS</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Ruangan Ber AC
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            KOSTAN memiliki jaringan WIFI
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Kapasitas ruangan hingga 2 orang
+                        </li>
+                    </ul>
+                    <p>KOSTAN ANNAS Harga NgeKOST mulai dari Rp.1.200.000 / Bulan </p>
+                    <p>KOSTAN sudah dilengkapi dengan jaringan wifi dan Ber AC sehingga KOSTAN akan terasa sejuk
+                        pada saat siang hari, KOSTAN yang bersih dan nyaman. Kapasitas ruangan hingga 2 orang per kamar
+                        KOSTAN dekat dengan Kampus anda. KOSTAN dekat dengan pusat perbelanjaan.
+                    </p>
+                    <p>Ber alamat di Jakarta Selatan, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah
+                        Khusus Ibukota Jakarta 10550</p>
+                    <p class="rate">
+                        <span>Rp. 1.200.000 /</span> MONTH
+                    </p>
+                    <button type="button" class="head-btn"><a href="#book">BOOKING NOW !</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/greensuite.jpg " alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>KOSTAN greensuite</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Ruangan Ber AC
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Harga NgeKOST murah
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            KOSTAN bersih dan nyaman
+                        </li>
+                    </ul>
+                    <p>KOSTAN greensuite Harga NgeKOST mulai dari Rp.1.200.000 / Bulan </p>
+                    <p>Kostan murah dilengkapi dengan ruangan yang Ber AC sehingga Kostan akan terasa sejuk
+                        di siang hari yang terik atau panas ruangan yang luas, bersih, nyaman. Kostan dekat
+                        dengan kampus sehingga menghemat biaya perjalanan ke kampus, serta kostan dekat
+                        dengan pusat perbelanjaan.
+                    </p>
+                    <p>Ber alamat di JRWP + R53, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus
+                        Ibukota Jakarta 10550</p>
+                    <p class="rate">
+                        <span>Rp. 1.200.000 /</span>MONTH
+                    </p>
+                    <button type="button" class="head-btn"><a href="#book">BOOKING NOW !</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/muslimah ummi.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>KOSTAN PUTRI muslimah ummi</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Ruangan Ber AC
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Harga NgeKOST murah
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Kapasitas ruangan hingga 2 orang
+                        </li>
+                    </ul>
+                    <p>KOSTAN PUTRI muslimah ummi Harga NgeKOST mulai dari Rp.1.300.000 / Bulan </p>
+                    <p>KOSTAN sudah dilengkapi dengan ruangan Ber AC sehingga KOSTAN akan terasa sejuk
+                        pada saat siang hari, KOSTAN yang luas, bersih, dan nyaman. Kapasitas ruangan hingga 2
+                        orang per kamar KOSTAN dekat dengan Kampus anda sehingga menghemat biaya perjalanan ke
+                        kampus. KOSTAN dekat dengan pusat perbelanjaan.</p>
+                    <p>Ber alamat di Gg. Arus No.6, RW.1, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah
+                        Khusus Ibukota Jakarta 12640</p>
+                    <p class="rate">
+                        <span>Rp. 1.300.000 /</span> MONTH
+                    </p>
+                    <button type="button" class="head-btn"><a href="#book">BOOKING NOW !</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/putri qonita.jpg " alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>KOSTAN putri qonita</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Ruangan Ber AC
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            KOSTAN memiliki jaringan WIFI
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Harga NgeKOST murah
+                        </li>
+                    </ul>
+                    <p>KOSTAN PUTRI qonita Harga NgeKOST mulai dari Rp.1.200.000 / Bulan </p>
+                    <p>KOSTAN sudah dilengkapi dengan jaringan wifi dan Ber AC sehingga KOSTAN akan terasa sejuk
+                        pada saat siang hari, KOSTAN yang luas, bersih, dan nyaman. Kapasitas ruangan hingga 2
+                        orang per kamar KOSTAN dekat dengan Kampus anda sehingga menghemat biaya perjalanan ke
+                        kampus. KOSTAN dekat dengan pusat perbelanjaan.</p>
+                    <p>Ber alamat di JRXM+6RW, RT.6/RW.1, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah
+                        Khusus Ibukota Jakarta 10550</p>
+                    <p class="rate">
+                        <span>Rp. 1.200.000 /</span> MONTH
+                    </p>
+                    <button type="button" class="head-btn"><a href="#book">BOOKING NOW !</a></button>
+                </div>
+            </article>
+            <!-- end of single room -->
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus1.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus2.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus3.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                    provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        203 Fake St.Mountain View, San Francisco, California, USA
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +84545 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
